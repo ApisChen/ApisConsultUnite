@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "CFGradientLabel.h"
+#import "MultiColorView.h"
 
 static NSString *consultTitleCollectionCell = @"ConsultTitleCollectionCell";
 
@@ -16,6 +17,7 @@ IB_DESIGNABLE
 @interface ConsultTitleCollectionCell : UICollectionViewCell
 
 @property (weak, nonatomic) IBOutlet CFGradientLabel *titleLabel;
+@property (weak, nonatomic) IBOutlet MultiColorView *multiColorLine;
 
 
 @end

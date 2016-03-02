@@ -53,10 +53,10 @@
     CGColorRef mainColor = NULL;
     CGColorRef subColor = NULL;
     if (!_isMainLabel) {
-        mainColor = [UIColor redColor].CGColor;
+        mainColor = [UIColor blueColor].CGColor;
         subColor = [UIColor grayColor].CGColor;
     } else {
-        subColor = [UIColor redColor].CGColor;
+        subColor = [UIColor blueColor].CGColor;
         mainColor = [UIColor grayColor].CGColor;
     }
 
@@ -67,7 +67,11 @@
                                          0);
         CGPoint endPoint = CGPointMake(textRect.origin.x + textRect.size.width*_progress,
                                        0);
-        CGContextDrawLinearGradient(context, gradient, startPoint, endPoint, kCGGradientDrawsBeforeStartLocation);
+        CGContextDrawLinearGradient(context,
+                                    gradient,
+                                    startPoint,
+                                    endPoint,
+                                    _progress==1?kCGGradientDrawsBeforeStartLocation|kCGGradientDrawsAfterEndLocation : kCGGradientDrawsBeforeStartLocation);
         CGGradientRelease(gradient);
     }
     
@@ -77,14 +81,17 @@
                                           0);
         CGPoint endPoint = CGPointMake(textRect.origin.x + textRect.size.width,
                                         0);
-        CGContextDrawLinearGradient(context, gradient, startPoint, endPoint, kCGGradientDrawsAfterEndLocation);
+        CGContextDrawLinearGradient(context,
+                                    gradient,
+                                    startPoint,
+                                    endPoint,
+                                    _progress==0?kCGGradientDrawsBeforeStartLocation|kCGGradientDrawsAfterEndLocation : kCGGradientDrawsAfterEndLocation);
         CGGradientRelease(gradient);
     }
 
     // 释放内存
     CGColorSpaceRelease(colorSpace);
     CFRelease(alphaMask);
-
 }
 
 @end

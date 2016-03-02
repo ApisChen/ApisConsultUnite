@@ -15,27 +15,47 @@
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hwi-UK-bva">
                         <rect key="frame" x="90" y="0.0" width="1" height="39"/>
-                        <color key="backgroundColor" red="0.56429640273442405" green="0.8666666666666667" blue="0.23022193121321294" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.8666666666666667" green="0.8666666666666667" blue="0.8666666666666667" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="1" id="Zf9-tj-RHZ"/>
                         </constraints>
                     </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W9g-po-2JO">
+                        <rect key="frame" x="0.0" y="39" width="90" height="0.0"/>
+                        <color key="backgroundColor" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="gK4-mz-PUC"/>
+                        </constraints>
+                    </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="第1个" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w6P-Uf-d2h" customClass="CFGradientLabel">
-                        <rect key="frame" x="24" y="9" width="42" height="21"/>
+                        <rect key="frame" x="24" y="10" width="42" height="20"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="23b-MK-LLg" userLabel="line" customClass="MultiColorView">
+                        <rect key="frame" x="0.0" y="37" width="91" height="2"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="2" id="t7Q-1B-k6b"/>
+                        </constraints>
+                    </view>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
             <constraints>
+                <constraint firstAttribute="bottom" secondItem="W9g-po-2JO" secondAttribute="bottom" id="14N-Jf-f7T"/>
                 <constraint firstItem="Hwi-UK-bva" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="2y6-nf-fql"/>
+                <constraint firstItem="Hwi-UK-bva" firstAttribute="leading" secondItem="W9g-po-2JO" secondAttribute="trailing" id="3S9-Iw-TDG"/>
+                <constraint firstItem="W9g-po-2JO" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="6VD-jj-ucc"/>
                 <constraint firstAttribute="bottom" secondItem="Hwi-UK-bva" secondAttribute="bottom" id="BIW-aw-Qot"/>
                 <constraint firstItem="w6P-Uf-d2h" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="Hr0-1T-TZF"/>
+                <constraint firstAttribute="bottom" secondItem="23b-MK-LLg" secondAttribute="bottom" id="Lbg-FU-11M"/>
                 <constraint firstAttribute="trailing" secondItem="w6P-Uf-d2h" secondAttribute="trailing" id="Uc8-Lj-jci"/>
                 <constraint firstAttribute="trailing" secondItem="Hwi-UK-bva" secondAttribute="trailing" id="h4E-3N-R1m"/>
+                <constraint firstAttribute="trailing" secondItem="23b-MK-LLg" secondAttribute="trailing" id="mjT-Jm-qFv"/>
                 <constraint firstItem="w6P-Uf-d2h" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="p2C-Ht-faF"/>
+                <constraint firstItem="23b-MK-LLg" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="q8e-ql-Cfx"/>
             </constraints>
             <size key="customSize" width="91" height="39"/>
             <variation key="default">
@@ -44,6 +64,7 @@
                 </mask>
             </variation>
             <connections>
+                <outlet property="multiColorLine" destination="23b-MK-LLg" id="wXB-dz-REW"/>
                 <outlet property="titleLabel" destination="w6P-Uf-d2h" id="ObA-Od-epa"/>
             </connections>
             <point key="canvasLocation" x="471.5" y="419.5"/>

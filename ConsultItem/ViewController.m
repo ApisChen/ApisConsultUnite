@@ -53,17 +53,26 @@
         ConsultTitleCollectionCell *cell = [titleCollection dequeueReusableCellWithReuseIdentifier:consultTitleCollectionCell forIndexPath:indexPath];
         cell.titleLabel.text = [NSString stringWithFormat:@"第%ld个",(long)indexPath.item];
         
-        
-        cell.titleLabel.isMainLabel = leftIndex==indexPath.row;
+        cell.titleLabel.isMainLabel = cell.multiColorLine.isMainView = leftIndex == indexPath.item;
         
         if (leftIndex == indexPath.row) {
+            
             cell.titleLabel.progress = leftPercent;
-        } else if (leftIndex+1 == indexPath.row) {
+            
+            cell.multiColorLine.progress = leftPercent;
+            
+        }else if (leftIndex + 1 == indexPath.row){
+            
             cell.titleLabel.progress = leftPercent;
-        } else {
+            
+            cell.multiColorLine.progress = leftPercent;
+            
+        }else{
+            
             cell.titleLabel.progress = 0;
+            
+            cell.multiColorLine.progress = 0;
         }
-        
         
         return cell;
     }

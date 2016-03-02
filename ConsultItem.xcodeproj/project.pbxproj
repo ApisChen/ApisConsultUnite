@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5F3E3A261C7DCD9700F945B4 /* CFGradientLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F3E3A251C7DCD9700F945B4 /* CFGradientLabel.m */; };
+		5F53418D1C86B74C00C3C803 /* MultiColorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F53418C1C86B74C00C3C803 /* MultiColorView.m */; };
 		5F6149B71C7BDC590052429D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F6149B61C7BDC590052429D /* main.m */; };
 		5F6149BA1C7BDC590052429D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F6149B91C7BDC590052429D /* AppDelegate.m */; };
 		5F6149BD1C7BDC590052429D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F6149BC1C7BDC590052429D /* ViewController.m */; };
@@ -22,6 +23,8 @@
 /* Begin PBXFileReference section */
 		5F3E3A241C7DCD9700F945B4 /* CFGradientLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFGradientLabel.h; sourceTree = "<group>"; };
 		5F3E3A251C7DCD9700F945B4 /* CFGradientLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFGradientLabel.m; sourceTree = "<group>"; };
+		5F53418B1C86B74C00C3C803 /* MultiColorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiColorView.h; sourceTree = "<group>"; };
+		5F53418C1C86B74C00C3C803 /* MultiColorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiColorView.m; sourceTree = "<group>"; };
 		5F6149B21C7BDC590052429D /* ConsultItem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConsultItem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F6149B61C7BDC590052429D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5F6149B81C7BDC590052429D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -73,6 +76,8 @@
 				5F6149B91C7BDC590052429D /* AppDelegate.m */,
 				5F6149BB1C7BDC590052429D /* ViewController.h */,
 				5F6149BC1C7BDC590052429D /* ViewController.m */,
+				5F53418B1C86B74C00C3C803 /* MultiColorView.h */,
+				5F53418C1C86B74C00C3C803 /* MultiColorView.m */,
 				5F6149CC1C7BDC7A0052429D /* ApisConsultUnite.h */,
 				5F6149CD1C7BDC7A0052429D /* ApisConsultUnite.m */,
 				5F3E3A241C7DCD9700F945B4 /* CFGradientLabel.h */,
@@ -173,6 +178,7 @@
 				5F6149B71C7BDC590052429D /* main.m in Sources */,
 				5F6149CE1C7BDC7A0052429D /* ApisConsultUnite.m in Sources */,
 				5F966FD61C7D420400515076 /* ConsultTitleCollectionCell.m in Sources */,
+				5F53418D1C86B74C00C3C803 /* MultiColorView.m in Sources */,
 				5F3E3A261C7DCD9700F945B4 /* CFGradientLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
