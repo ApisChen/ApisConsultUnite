@@ -38,7 +38,7 @@
     [self.text drawWithRect:rect options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : self.font} context:NULL];
     
     // 坐标 (只对设置后的画到context起作用 之前画的文字不起作用)
-    CGContextTranslateCTM(context, 0.0f, rect.size.height- (rect.size.height - textSize.height)*0.5);
+    CGContextTranslateCTM(context, 0.0f, floorf(rect.size.height- (rect.size.height - textSize.height)*0.5));
     CGContextScaleCTM(context, 1.0f, -1.0f);
     
     CGImageRef alphaMask = NULL;
